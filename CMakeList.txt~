@@ -1,0 +1,7 @@
+project(BING)
+cmake_minimum_required(VERSION 2.8)
+
+file(GLOB SRC_LIST Objectness/*.cpp Objectness/*.h)
+
+add_library(BING SHARED ${SRC_LIST})
+target_link_libraries(WeardexFeatureMATLAB ${LIBRARY_NAMES})
